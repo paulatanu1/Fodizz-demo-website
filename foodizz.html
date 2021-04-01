@@ -1,203 +1,554 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Foodizz.com</title>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foodizz.com</title>
 	<link href="css/basic css.css" type="text/css" rel="stylesheet">
 	<link href="css/dsgine part.css" type="text/css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
-</head>
-	
-<body>
-	<header>
-		<div class="container-fluid bg-color height">
-			<div class="row">
-				<div class="col-3">
-					<a href="#"><img class="logo-ctrl float-left" src="images/logo.png" alt="logo_foodizz"></a>
-				</div>
-				<div class="col-6">
-					<div class="navbar float-left">
-						<ul>
-							<li><a href="#">ORDER</a></li>
-							<li><a href="#">RESTAURANTS</a></li>
-							<li><a href="#">OFFERS</a></li>
-							<li><a href="#">TRENDING</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-3">
-					<ul class="top-nav-icon">
-						<li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-search"></i></a></li>
-					</ul>
-					<div class="call">
-						<a href="#">CALL ME NOW</a>
-					</div>	
-				</div>
+	<link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<style type="text/css">
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.5);
+    background-image: url("images/tenor.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+	</head>
+
+	<body onLoad="load()">
+<div id="loading"></div>
+<header>
+      <div class="container-fluid bg-color height" id="fixed">
+    <div class="row">
+          <div class="col-3"> <a href="foodizz.html"><img class=" float-left" src="images/logo_new.png" alt="logo_foodizz"></a> </div>
+          <div class="col-6">
+        <div class="navbar float-left">
+             <ul>
+           		<li><a href="Order Page.html">ORDER</a></li>
+				<li><a href="Gallery.html">GALLERY</a></li>
+				<li><a href="Offers.html">OFFERS</a></li>
+				<li><a href="About us.html">ABOUT US</a></li>
+          	</ul>
+            </div>
+      </div>
+          <div class="col-3">
+        <ul class="top-nav-icon">
+              <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        <div class="call"> <a href="#">CALL ME NOW</a> </div>
+      </div>
+        </div>
+  </div>
+    </header>
+		<section class="wgl-page-markers" style="top:25%;">
+		  <div class="page-markers-wpapper" style="top:25%"> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/burger.png" alt=""> </a> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/pizza.png" alt=""> </a> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/beer_icon.png" alt=""> </a> 
 			</div>
-		</div>
-	</header>
-		<div>
-			<ul class="pop-menu">
-				<li><img src="images/side menu1.png" alt=""></li>
-				<li><img src="images/side menu2.png" alt=""></li>
-				<li><img src="images/side menu 3.png" alt=""></li>
-			</ul>
-		</div>
-	<section class="banner py-3 cloud-bg">
-		<div class= "container-fluid">
-			<div class= "row">
-				<div class="col-5 text-center">
-					<img class="img-burger" src="images/burger-big-a4.png" alt="burger_full">
-				</div>
-				<div class="col-7 pl-2">
-					<div class="bg-below"><span class="bg-img-banner">BURGER TIME</span></div>
-						<h1 class="text-white">OUR SPECIAL<br>Cheeseburger</h1>
-						<h3><div class="text-white">ONLY FRESH CHICKEN</div><br><div class="text-white">BEST QUALITY VEGETABLES</div><br><div class="text-white">MOZZARELLA CHEESE</div></h3>
-					<div>
-						<button class="burger-buy">I WANT BURGER</button>
-					</div>
-				</div>
-			</div>
-		</div> 
-	</section>
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-4 mt-1 pizza-burger">
-					<img src="images/Screenshot_4.png" alt="pizza">
-					<h3><a href="#">Carft PIZZA</a></h3>
-				</div>
-				<div class="col-4 mt-1 pizza-burger">
-					<img src="images/Screenshot_3.png" alt="burger">
-					<h3><a href="#">Ham BURGERS</a></h3>
-				</div>
-				<div class="col-4 mt-1 pizza-burger">
-					<img src="images/Screenshot_5.png" alt="unknown">
-					<h3><a href="#">YUMMY DONUTS</a></h3>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container-fluid body-sec2">
-			<div class="row">
-				<div class="col-6">
-					<img src="images/burger-body.png" alt="burger-30">	
-				</div>
-				<div class="col-6">
-					<h2>always fresh</h2>
-					<h1>From Texas with <br>American Love</h1>
-					<p>FoodMood is an international chain of fast food restaurants, 
-						which has an experience of opening more than 170 restaurants 
-						in 10 countries of the world. Thus the restaurants of the new
-						generation had emerged in 2017.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container-fluid body-sec3">
+  		</section>
+<section class="banner py-3 cloud-bg">
+      <div class= "container-fluid">
+    <div class= "row">
+          <div class="col-5 text-center">
+        <div id="parallax"> 
+              <!--<img class="img-burger" src="images/burger-big-a4.png" data-speed="2" alt="burger_full">--> 
+            </div>
+      </div>
+          <div class="col-7 pl-2">
+        <div class="bg-below"> <span class="bg-img-banner text-white">BURGER TIME</span> </div>
+        <div>
+              <h1 class="text-white text-crtl">OUR SPECIAL<br class="text-crtl">
+            Cheeseburger </h1>
+              <h3 class="text-crtl">
+            <div class="text-white">ONLY FRESH CHICKEN</div>
+            <br>
+            <div class="text-white">BEST QUALITY VEGETABLES</div>
+            <br>
+            <div class="text-white">MOZZARELLA CHEESE</div>
+          </h3>
+            </div>
+        <div class="pt-4 pl-4">
+              <button class="hvr-bounce-in">I WANT BURGER</button>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container mt-4">
+    <div class="row">
+          <div class="col-4 mt-1 pizza-burger"> <img src="images/Screenshot_4.png" alt="pizza"> <a href="#">Carft PIZZA</a> </div>
+          <div class="col-4 mt-1 pizza-burger"> <img src="images/Screenshot_3.png" alt="burger"> <a href="#">Ham BURGERS</a> </div>
+          <div class="col-4 mt-1 pizza-burger"> <img src="images/Screenshot_5.png" alt="unknown"> <a href="#">YUMMY DONUTS</a> </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container-fluid body-sec2 mt-4">
+    <div class="row">
+          <div class="col-6"> <img style="background-attachment: fixed" src="images/burger-body.png" alt="burger-30"> </div>
+          <div class="col-6 sec-2-text">
+        <h2>always fresh</h2>
+        <h1>From Texas with <br>
+              American Love</h1>
+        <p>FoodMood is an international chain of fast food restaurants,<br>
+              which has an experience of opening more than 170 restaurants<br>
+              in 10 countries of the world. Thus the restaurants of the new<br>
+              generation had emerged in 2017.</p>
+      </div>
+        </div>
+  </div>
+    </section>
+<section> 
+      <!-------Slider-------->
+      <div class="heading"> </div>
+      <!--swiper slider-->
+      <div class="swiper-container">
+    <div class="swiper-wrapper"> 
+          <!--slide 1-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Bacon Cheeseburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 2-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Chicken Hamburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 3-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Double Cheeseburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 4-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Double Barbecue <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 5-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Double Cheeseburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 6-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Egg Hamburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 7-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Fresh Cheeseburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+          <!--slide 8-------------------------------------->
+          <div class="swiper-slide">
+        <div class="slider-box">
+              <p class="time">New</p>
+              <div class="img-box"> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+              <p class="detail">Black Hamburger <a href="#" class="price">Price-40$</a> </p>
+              <div class="cart"> <a href="#">Add To Cart</a> </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container-fluid body-sec3">
+    <div class="container">
+          <div class="row">
+        <div class="col-4 mx-auto">
+              <div class="float-left">
+            <h1 style="color: #f3b956">{ </h1>
+          </div>
+              <div class="main px-1">
+            <h1 class="text-white">MAIN</h1>
+          </div>
+              <div class="food-mood">
+            <h2 class="m-0 text-white">Food</h2>
+            <h2 class="m-0 text-white">Mood</h2>
+          </div>
+              <div>
+            <h1 style="color: #f3b956">}</h1>
+          </div>
+            </div>
+      </div>
+          <div class="row">
+        <div class="col-5 mx-auto ">
+              <div class=" text-center">
+            <h2 class="text-white spl-font bg-img-menu">Burgers</h2>
+          </div>
+              <div class="text-center text-white" style="padding-top: 50px;">
+            <p>Chicken hamburger<br>
+                  <small>Bihari chicken chunks, sweet corn</small> </p>
+            <p>Double cheeseburger<br>
+                  <small>Vegetables wrapped in a crispy tortilla</small> </p>
+            <p>Black Hamburger<br>
+                  <small>Now Available at FoodMood</small> </p>
+            <p>Double Hamburger<br>
+                  <small>Crispy potato wedges covered with spicy</small> </p>
+          </div>
+            </div>
+        <div class="col-5 mx-auto">
+              <div class=" text-center">
+            <h2 class="text-white spl-font bg-img-menu">Snacks</h2>
+          </div>
+              <div class="text-center text-white" style="padding-top: 50px;">
+            <p>Chicken Spin Roll<br>
+                  <small>Chicken breast, cheddar wrapped in a crispy</small> </p>
+            <p>BBQ Spin Roll<br>
+                  <small>Bihari chicken chunks, sweet corn</small> </p>
+            <p>Spring Spin Roll<br>
+                  <small>Vegetables wrapped in a crispy tortilla</small> </p>
+            <p>Vegan Spin Roll<br>
+                  <small>Now Available at Foodizz</small> </p>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container-fluid body-sec4">
+    <div class="row">
+          <div class="col-6">
+        <div class="area">Order Now</div>
+      </div>
+          <div class="col-6 pop-box">
+        <h2 class="text-center spcl">Combo Menu</h2>
+        <div class="menu-items"> <img src="images/menu-img-1.png" alt=""> <img src="images/menu-img-2.png" alt=""> <img src="images/menu-img-3.png" alt=""> </div>
+        <div class="menu-text">
+              <p>Burger + French Fries.............. $35.00</p>
+              <br>
+              <small style="padding-left: 96px;padding-top: 10px; font-size: 14px;">Now Available at <span>Foodizz</span></small> <br>
+              <p style="padding-top: 91px;padding-left: 24px;">Double Burger.............. $55.00</p>
+              <br>
+              <small style="padding-left: 96px;padding-top: 10px;font-size: 14px;">Now Available at <span>Foodizz</span></small> <br>
+              <p style="padding-top: 91px;padding-left: 24px;">Burgers + Fries + Cola.............. $35.00</p>
+              <br>
+              <small style="padding-left: 96px;padding-top: 10px;font-size: 14px;">Now Available at <span>Foodizz</span></small> </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<!--<section class="stat" id="stats">
+		<div class="content-box">
+			<br>
 			<div class="container">
-			<div class="row">
-				<div class="col-4 mx-auto">
-					<div class="float-left"><h1>{ </h1></div>
-					<div class="main px-1">
-						<h1>MAIN</h1>
+				<div class="row text-center">
+					<div class="col-md-3">
+						<div class="stat-items">
+							<h2><span class="counter text-center">150<span>+</span></span></h2>
+							<p>Burgers at Hour</p>
+						</div>
 					</div>
-					<div class="food-mood">
-						<h2 class="m-0">Food</h2>
-						<h2 class="m-0">Mood</h2>
+					<div class="col-md-3">
+						<div class="stat-items">
+							<h2><span class="counter text-center">47<span>+</span></span></h2>
+							<p>Skilled Professionals</p>
+						</div>
 					</div>
-					<div><h1>}</h1></div>
-				</div>
-			</div>
-				<div class="row">
-					<div class="col-5 mx-auto bg-img-menu">
-						<h2 class="pl-7 spl-font">Burgers</h2>
-							<p>Chicken hamburger<br>
-								<small>Bihari chicken chunks, sweet corn</small>
-							</p>
-							<p>Double cheeseburger<br>
-								<small>Vegetables wrapped in a crispy tortilla</small>
-							</p>
-							<p>Black Hamburger<br>
-								<small>Now Available at FoodMood</small>
-							</p>
-							<p>Double Hamburger<br>
-								<small>Crispy potato wedges covered with spicy</small>
-							</p>
-						
+					<div class="col-md-3">
+						<div class="stat-items">
+							<h2><span class="counter text-center">2450<span>+</span></span></h2>
+							<p>Orders Everyday</p>
+						</div>
 					</div>
-					<div class="col-5 mx-auto bg-img-menu">
-						<h2 class="pl-8 spl-font">Snacks</h2>
-							<p>Chicken Spin Roll<br>
-								<small>Chicken breast, cheddar wrapped in a crispy</small>
-							</p>
-							<p>BBQ Spin Roll<br>
-								<small>Bihari chicken chunks, sweet corn</small>
-							</p>
-							<p>Spring Spin Roll<br>
-								<small>Vegetables wrapped in a crispy tortilla</small>
-							</p>
-							<p>Vegan Spin Roll<br>
-								<small>Now Available at Foodizz</small>
-							</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-6 pt-3 pl-8 float-right">
-					<img src="images/delivery boy.png" alt="">
-				</div>
-				<div class="col-6 pt-3">
-					<img src="images/free delivery.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container-fluid bg-black">
-			<div class="row">
-				<div class="col-3">
-					<h2>Dont Be Shy, Say HI!</h2><br>
-					<p>27 Division St, NY 10002, USA<br>
-						+ 8 (123) 578 987 455<br>
-						foodizz@yahoo.in</p>
-				</div>
-				<div class="col-3">
-					<p>Opening Hours</p>
-						<small>
-							Monday ................8.00 - 20.00<br>
-							Tuesday ................8.00 - 20.00<br>
-							Wednesday ................8.00 - 20.00<br>
-							Thursday ................8.00 - 20.00<br>
-							Friday ................8.00 - 20.00<br>
-							Saturday ................8.00 - 20.00<br>
-							Sunday ................closed
-						</small>
-				</div>
-				<div class="col-5">
-					<div class="row">
-						<div class="insta">
-							<h3 class="cursor" onclick="this.innerHTML='Follow Us!'">We are on Insta</h3>
-							<img src="images/1200px-RedDot_Burger.jpg" alt="">
-							<img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt="">
-							<img src="images/intro-1561662413.jpg" alt="">
-							<div class="mt-2">
-								<img src="images/WAT_19169_BreakfastBurger_InEnvironment_9574.0.jpg" alt="">
-								<img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt="">
-								<img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt="">
-							</div>
+					<div class="col-md-3">
+						<div class="stat-items">
+							<h2><span class="counter text-center">340<span>+</span></span></h2>
+							<p>Cups of Coffee</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
+	
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="stats">
+				<div class="stats-overlay">
+					<div class="statsbar">
+						<div class="stat-one">
+							<div class="stat-number" data-n="200">
+							  <span class="Single">0</span>
+							</div>
+							<div class="stat-title">Stuff</div>
+						</div>
+						<div class="stat-two">
+							<div class="stat-number" data-n="60">0</div>
+							<div class="stat-title">Stuff over the World</div>
+						</div>
+						<div class="stat-three">
+							<div class="stat-number" data-n="10">0</div>
+							<div class="stat-title">Stuff on Europe</div>
+						</div>
+						<div class="stat-four">
+							<div class="stat-number" data-n="10000">10000</div>
+							<div class="stat-title">Random Stuff</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<section>
+      <div class="container">
+    <div class="row">
+          <div class="col-12">
+        <div class="body-sec-5">
+              <p>always Trend</p>
+              <h1>Read Burger News</h1>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container">
+    <div class="row">
+          <div class="col-4"> 
+			  <img class="blog-img" src="images/blog_02-840x650-840x720 (1).jpg" alt="">
+			<div>
+				  <p>Fast Food</p>
+				  <h3>Only Quality Product</h3>
+				  <div class="button" id="clickeffect"></div>
+				  <div class="details" id="demo"><p>Einstein himself apparently had no special plans<br> for what he knew could be a momentous...</p></div>
+			</div>
+      </div>
+          <div class="col-4">
+			  <img class="blog-img" src="images/blog_03-840x650-840x720.jpg" alt="">
+			  <div>
+			  	<p>Dinner</p>
+				<h3>Need a Salad? No Prob!</h3>
+				  <div class="button" id="clickeffect2"></div>
+				  <div class="details" id="demo2"><p>Einstein himself apparently had no special plans<br> for what he knew could be a momentous...</p></div>
+			  </div>
+      </div>
+          <div class="col-4">
+			  <img class="blog-img" src="images/blog_12-840x650-840x720.jpg" alt="">
+			  <div>
+			  	<p>Dinner</p>
+        		<h3>Seafood Burger</h3>
+				  <div class="button" id="clickeffect3"></div>
+				  <div class="details" id="demo3"><p>Einstein himself apparently had no special plans<br> for what he knew could be a momentous...</p></div>
+			  </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container">
+    <div class="row">
+          <div class="col-6 pt-3 pl-8 float-right wow slideInLeft"> <img src="images/delivery boy.png" alt=""> </div>
+          <div class="col-6 pt-3"> <img src="images/free delivery.png" alt=""> </div>
+        </div>
+  </div>
+    </section>
+<section>
+      <div class="container-fluid bg-footer mt-2">
+    <div class="row">
+          <div class="col-3 mt-2 mx-auto text-white">
+        <h2>Dont Be Shy, Say HI!</h2>
+        <br>
+        <p>27 Division St, NY 10002, USA<br>
+              + 8 (123) 578 987 455<br>
+              foodizz@yahoo.in</p>
+			 <br>
+			<img src="images/footer-burger.png"	alt="">
+      </div>
+          <div class="col-3 mt-2 mx-auto text-white">
+        <p>Opening Hours</p>
+        <small> Monday ................8.00 - 20.00<br>
+            Tuesday ................8.00 - 20.00<br>
+            Wednesday ................8.00 - 20.00<br>
+            Thursday ................8.00 - 20.00<br>
+            Friday ................8.00 - 20.00<br>
+            Saturday ................8.00 - 20.00<br>
+            Sunday ................closed </small> </div>
+          <div class="col-3 mx-auto">
+        <div class="row">
+              <div class="insta">
+            <h3 class="cursor text-white" onclick="this.innerHTML='Follow Us!'">We are on Insta</h3>
+            <img src="images/1200px-RedDot_Burger.jpg" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> <img src="images/intro-1561662413.jpg" alt="">
+            <div class="mt-2"> <img src="images/WAT_19169_BreakfastBurger_InEnvironment_9574.0.jpg" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+
+<!------JS Portion--------> 
+<script type="text/javascript" src= "js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/swiper.min.js"></script> 
+<!--<script type="text/javascript" src="js/jquery.counterup.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script> 
+<script src="js/script.js"></script>
+<script src="js/script-counter.js"></script>  
+<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript">
+		new WOW().init();
+	</script>
+	
+<script>
+		var preloader=document.getElementById('loading')
+		function load(){
+				
+			
+			setTimeout(function(){preloader.style.display='none';
+		},5000)}
+	</script> 
+<script type="text/javascript">
+		(function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#parallax");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${100 - (_mouseX - _w) * 0.01}% ${100 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+
+})();
+	</script> 
+<script type="text/javascript">
+	
+		function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+	
+	</script> 
+<script type="text/javascript">
+	$("#clickeffect").click(
+	
+		function()
+		{
+			$("#demo").slideToggle(1000);
+
+		}
+	
+	);
+
+</script>
+		
+		<script type="text/javascript">
+	$("#clickeffect2").click(
+	
+		function()
+		{
+			$("#demo2").slideToggle(1000);
+
+		}
+	
+	);
+
+</script>
+		
+		<script type="text/javascript">
+	$("#clickeffect3").click(
+	
+		function()
+		{
+			$("#demo3").slideToggle(1000);
+
+		}
+	
+	);
+
+</script>
+		
+		
+		<script type="text/javascript">
+	
+$(window).scroll(
+	function(){
+		
+	if($(this).scrollTop()>50)
+		{
+		$("#fixed").addClass("fixed-active");
+		}
+	else
+		{
+			$("#fixed").removeClass("fixed-active");
+		}
+});	
+	
+</script>
 </body>
-</html>                                                                                                                                                         
+</html>

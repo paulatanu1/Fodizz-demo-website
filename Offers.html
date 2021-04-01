@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Order</title>
+	<link href="css/Order.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/basic css.css">
+	<!--/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>*/-->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-----Pop Box----->
+	<section class="wgl-page-markers" style="top:25%;">
+		  <div class="page-markers-wpapper" style="top:25%"> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/burger.png" alt=""> </a> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/pizza.png" alt=""> </a> <a class="page-marker" href="#" target="_blank">
+				<div class="page-marker_bg" style="background:#232323;"></div>
+				<img src="images/beer_icon.png" alt=""> </a> 
+			</div>
+  		</section>
+	<header>
+		<div class="container-fluid bg-color height" id="fixed">
+			<div class="row">
+				<div class="col-3">
+					<a href="foodizz.html"><img class="float-left" src="images/logo_new.png" alt="logo_foodizz"></a>
+				</div>
+				<div class="col-6">
+					<div class="navbar float-left">
+						<ul>
+							<li><a href="Order Page.html">ORDER</a></li>
+							<li><a href="Gallery.html">GALLERY</a></li>
+							<li><a href="Offers.html">OFFERS</a></li>
+							<li><a href="About us.html">ABOUT US</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3">
+					<ul class="top-nav-icon">
+						<li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-search"></i></a></li>
+					</ul>
+					<div class="call">
+						<a href="#">CALL ME NOW</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-------Breadcrumbs------>
+		<div class="container-fluid bg-breadcrumb">
+			<div class="row">
+				<div class="col-12">			
+					<ul class="breadcrumb">
+  						<li><a href="foodizz.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+  						<li><a href="Offers.html"><i class="fas fa-utensil-spoon"></i> &nbsp;Offers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	<!------Body sec-1------->
+	<footer>
+		<div class="container-fluid bg-footer text-white mt-2">
+    <div class="row">
+          <div class="col-3 mt-2 mx-auto">
+        <h2>Dont Be Shy, Say HI!</h2>
+        <br>
+        <p>27 Division St, NY 10002, USA<br>
+              + 8 (123) 578 987 455<br>
+              foodizz@yahoo.in</p>
+		<br>
+			<img src="images/footer-burger.png"	alt="">
+			 
+      </div>
+          <div class="col-3 mt-2 mx-auto text-white">
+        <p>Opening Hours</p>
+        <small> Monday ................8.00 - 20.00<br>
+            Tuesday ................8.00 - 20.00<br>
+            Wednesday ................8.00 - 20.00<br>
+            Thursday ................8.00 - 20.00<br>
+            Friday ................8.00 - 20.00<br>
+            Saturday ................8.00 - 20.00<br>
+            Sunday ................closed </small> </div>
+          <div class="col-3 mt-2 mx-auto">
+        <div class="row">
+              <div class="insta">
+            <h3 class="cursor text-white" onclick="this.innerHTML='Follow Us!'">We are on Insta</h3>
+            <img src="images/1200px-RedDot_Burger.jpg" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> <img src="images/intro-1561662413.jpg" alt="">
+            <div class="mt-2"> <img src="images/WAT_19169_BreakfastBurger_InEnvironment_9574.0.jpg" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> <img src="images/KFC-Burger-PNG-Image-With-Transparent-Background.png" alt=""> </div>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<!-------Scripts------------------------------------------------------------------------------------->	
+	<!------Wow Js--------->
+	<script type="text/javascript" src= "js/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/wow.min.js"></script>
+
+	<script type="text/javascript" src="js/all.min.js"></script>
+	
+<script type="text/javascript">
+	
+$(window).scroll(
+	function(){
+		
+	if($(this).scrollTop()>50)
+		{
+			$("#fixed").addClass("fixed-active");
+		}
+	else
+		{
+			$("#fixed").removeClass("fixed-active");
+		}
+});	
+	
+</script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+	</footer>
+      
+	
+</body>
+</html>
