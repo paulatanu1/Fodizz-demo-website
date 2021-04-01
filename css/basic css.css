@@ -155,3 +155,7 @@ body{ margin:0; padding:0;}
 
 
 .bg-black{background: #3B3B3B;}
+.position-r{position:relative;}
+.position-a{
+	position: absolute
+}
